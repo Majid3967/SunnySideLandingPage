@@ -1,0 +1,46 @@
+*{
+    font-family: 'Barlow', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 2%;
+    
+}
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav ul{
+    list-style: none;
+}
+nav ul li{
+    margin: 2%;
+}
+nav ul li a{
+    text-decoration-line: none;
+}
+header{
+    background: url(images/desktop/image-header.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+    margin-top: -6%;
+}
+header h1{
+    text-align: center;
+    padding: 20%;
+    color: hsl(0, 0%, 100%);
+    word-spacing: 12px;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
