@@ -9,8 +9,7 @@
 nav{
     display: flex;
     justify-content: space-between;
-    margin: 2%;
-    
+    margin: 8%;
 }
 .navbar{
     display: flex;
@@ -19,12 +18,46 @@ nav{
 
 nav ul{
     list-style: none;
+    margin: 0 2%;
 }
 nav ul li{
     margin: 2%;
 }
-nav ul li a{
+.topnav li a{
     text-decoration-line: none;
+    color: hsl(0, 0%, 100%);
+    border-radius: 24px;
+    padding: 15px 30px;
+    font-weight: normal;
+    display: none;
+}
+.topnav li a:hover{
+    color: hsl(212, 27%, 19%);
+    background-color:hsl(0, 0%, 100%) ;
+}
+.responsive{
+    background-color: hsl(0, 0%, 100%);
+    z-index: 1;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 10% 20%;
+    text-align: center;
+    align-self: center;
+    margin-right: 8%;
+}
+.responsive li a{
+    color: hsl(210, 4%, 67%);
+    border-radius: 24px;
+    padding: 15px 30px;
+    font-weight: normal;
+    display: inline-block;
+}
+.responsive li a:hover{
+    color: hsl(167, 40%, 24%);
+    background-color: hsl(51, 100%, 49%);
+    display: inline-block;
+    text-align: center;
 }
 header{
     background: url(images/desktop/image-header.jpg) no-repeat center center fixed; 
@@ -33,14 +66,56 @@ header{
     -o-background-size: cover;
     background-size: cover;
     height: 100vh;
-    margin-top: -6%;
+    margin-top: -24%;
+    z-index: -1;
+}
+.resheader{
+    margin-top: -100%;
 }
 header h1{
     text-align: center;
-    padding: 20%;
+    padding-top: 36%;
     color: hsl(0, 0%, 100%);
-    word-spacing: 12px;
+    word-spacing: 20px;
     text-transform: uppercase;
     font-size: 2.5rem;
-    font-weight: bold;
+    font-weight: 900;
+    font-family: 'Fraunces', serif;
+    z-index: -1;
+}
+header svg{
+    margin: 0 45%;
+    padding-top: 24%;
+}
+
+@media only screen and (min-width: 480px) {
+    nav{
+        margin: 2% 4%;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        margin: 0% 4%;
+
+    }
+    .topnav li a{
+        display: block;
+    }
+    nav svg{
+        display: none;
+        padding: 2%;
+    }
+    #logo{
+        display: block;
+    }
+    header{
+        margin-top: -10%;
+    }
+    header h1{
+        padding-top: 16%;
+    }
+    header svg{
+        margin: 0 48%;
+        padding-top: 6%;
+    }
 }
