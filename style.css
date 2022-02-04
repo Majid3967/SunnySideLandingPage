@@ -82,10 +82,104 @@ header h1{
     font-weight: 900;
     font-family: 'Fraunces', serif;
     z-index: -1;
+
 }
 header svg{
     margin: 0 45%;
     padding-top: 24%;
+}
+.container{
+    display: flex;
+    flex-direction: column-reverse;
+}
+#a{
+    display: flex;
+    flex-direction: column;
+}
+.item{
+    padding: 10%;
+}
+.item h1{
+    font-weight: 900;
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+    color: hsl(212, 27%, 19%);
+    margin-bottom: 10%;
+}
+.item p{
+    color: hsl(210, 4%, 67%);
+    margin-bottom: 10%;
+    line-height: 1.6rem;
+}
+.item h3{
+    color: hsl(212, 27%, 19%);
+    font-family: 'Fraunces', serif;
+}
+.imageitem img{
+    width: 100%;
+}
+.item-1{
+    background: url('./images/desktop/image-graphic-design.jpg') no-repeat center;
+    width: 100%;
+    color: hsl(167, 40%, 24%);
+}
+.item-2{
+    background: url('./images/desktop/image-photography.jpg') no-repeat center;
+    color: hsl(198, 62%, 26%);
+}
+.box{
+    padding: 12.5% auto;
+    width: 100%;
+    text-align: center;
+}
+.box h2{
+    font-weight: 900;
+    font-family: 'Fraunces', serif;
+    padding-top: 100%;
+}
+.box p{
+    padding: 4% 6%  12.5% 6%;
+    line-height: 1.6rem;
+}
+#services{
+    flex-direction: column;
+}
+#testimonials{
+    text-align: center;
+    padding: 12% 4%;
+}
+#testimonials h1{
+    color: hsl(210, 4%, 67%);
+    font-weight: 900;
+    font-family: 'Fraunces', serif;
+    letter-spacing: 0.2rem;
+    padding: 8% 2%;
+}
+.tbox{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.tbox img{
+    border-radius: 100px;
+}
+.titem{
+    padding: 8%;
+    margin: 6% 0;
+}
+.titem p{
+    line-height: 1.6rem;
+    color:  hsl(232, 10%, 55%);
+    margin: 8% 0;
+}
+.titem h3{
+    color: hsl(212, 27%, 19%);
+    font-family: 'Fraunces', serif;
+    margin-bottom: 6%;
+}
+.titem span{
+    color: hsl(210, 4%, 67%);
+    font-family: 'Fraunces', serif;
 }
 
 @media only screen and (min-width: 480px) {
@@ -117,5 +211,37 @@ header svg{
     header svg{
         margin: 0 48%;
         padding-top: 6%;
+    }
+    .container{
+        flex-direction: row;
+    }
+    .imageitem img{
+        width: max-content;
+    }
+    #a{
+        flex-direction: row;
+    }
+    #services{
+        flex-direction: row;
+    }
+    .box{
+        padding: auto;
+        width: 100%;
+    }
+    .box h2{
+        padding-top: 50%;
+    }
+    .box p{
+        padding: 4% 25%  8% 25%;
+    }
+    .tbox{
+        flex-direction: row;
+    }
+    #testimonials h1{
+        padding: 0%;
+    }
+    .titem{
+        padding: 4%;
+        margin: 6% 0;
     }
 }
